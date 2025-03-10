@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetFashion - Ropa para Mascotas</title>
+    <style>
+        /* Estilos generales */
+        body {
+            background: linear-gradient(135deg, #F0E68C, #FFD700);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            animation: gradientAnimation 10s infinite alternate;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        h1, h2 {
+            color: #8B4513;
+            text-align: center;
+        }
+
+        p {
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #0000FF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Navegación */
+        nav {
+            background-color: #8B4513;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #FFFFFF;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        /* Secciones */
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1000px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Imágenes de productos */
+        .producto-imagen {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .producto-imagen:hover {
+            transform: scale(1.05);
+        }
+
+        /* Iconos */
+        .icono {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        /* Tarjetas de productos */
+        .producto-card {
+            display: inline-block;
+            width: 45%;
+            margin: 2%;
+            text-align: center;
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .producto-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #8B4513;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .producto-card {
+                width: 90%;
+                margin: 10px auto;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#datos">Datos de la Empresa</a>
+        <a href="#productos">Productos</a>
+        <a href="#tecnologias">Tecnologías</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <h1>Bienvenidos a PetFashion</h1>
+
+    <section id="datos">
+        <h2><img src="https://cdn-icons-png.flaticon.com/512/619/619032.png" alt="Icono empresa" class="icono">Datos de la Empresa</h2>
+        <p>PetFashion es una empresa dedicada a diseñar y vender ropa cómoda y elegante para mascotas. Ubicada en Madrid, España, la empresa fue fundada en 2020 por amantes de los animales y expertos en moda.</p>
+    </section>
+
+    <section id="productos">
+        <h2><img src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png" alt="Icono productos" class="icono">Productos</h2>
+        <div class="producto-card">
+            <h3>Abrigos para Perros</h3>
+            <img src="https://via.placeholder.com/300" alt="Abrigo para perro" class="producto-imagen">
+            <p>Abrigos cómodos y elegantes para perros, ideales para el invierno. Disponibles en varios tamaños y colores. <a href="https://es.wikipedia.org/wiki/Ropa_para_mascotas" target="_blank">Más información</a>.</p>
+        </div>
+        <div class="producto-card">
+            <h3>Vestidos para Gatos</h3>
+            <img src="https://via.placeholder.com/300" alt="Vestido para gato" class="producto-imagen">
+            <p>Vestidos ligeros y cómodos para gatos, perfectos para ocasiones especiales. <a href="https://es.wikipedia.org/wiki/Ropa_para_mascotas" target="_blank">Más información</a>.</p>
+        </div>
+        <div class="producto-card">
+            <h3>Disfraces para Mascotas</h3>
+            <img src="https://via.placeholder.com/300" alt="Disfraz para mascota" class="producto-imagen">
+            <p>Disfraces divertidos y originales para perros y gatos, ideales para fiestas y eventos temáticos. <a href="https://es.wikipedia.org/wiki/Ropa_para_mascotas" target="_blank">Más información</a>.</p>
+        </div>
+        <div class="producto-card">
+            <h3>Accesorios para Mascotas</h3>
+            <img src="https://via.placeholder.com/300" alt="Accesorios para mascota" class="producto-imagen">
+            <p>Collares, correas y otros accesorios que complementan el estilo de tu mascota. <a href="https://es.wikipedia.org/wiki/Ropa_para_mascotas" target="_blank">Más información</a>.</p>
+        </div>
+    </section>
+
+    <section id="tecnologias">
+        <h2><img src="https://cdn-icons-png.flaticon.com/512/2210/2210153.png" alt="Icono tecnologías" class="icono">Tecnologías Utilizadas</h2>
+        <p>Utilizamos inteligencia artificial para crear patrones y diseños únicos que se adaptan a las necesidades de cada mascota. <a href="https://es.wikipedia.org/wiki/Inteligencia_artificial" target="_blank">Más información</a>.</p>
+        <p>Nuestro sistema sugiere prendas basadas en el tamaño, raza y preferencias de tu mascota. <a href="https://es.wikipedia.org/wiki/Aprendizaje_automático" target="_blank">Más información</a>.</p>
+        <p>Un asistente virtual que resuelve dudas y ayuda en la selección de productos. <a href="https://es.wikipedia.org/wiki/Chatbot" target="_blank">Más información</a>.</p>
+    </section>
+
+    <section id="contacto">
+        <h2><img src="https://cdn-icons-png.flaticon.com/512/2343/2343699.png" alt="Icono contacto" class="icono">Contacto</h2>
+        <p>Email: <a href="mailto:info@petfashion.com">info@petfashion.com</a></p>
+        <p>Teléfono: +34 912 345 678</p>
+    </section>
+
+    <footer>
+        <p>© 2025 PetFashion. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
